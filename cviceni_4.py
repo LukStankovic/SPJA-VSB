@@ -13,7 +13,7 @@ class Counter(object):
 
     @staticmethod
     def print_no_of_counters():
-        print("Total counters: " + str(Counter.no_of_counters))
+        print('Total counters: {0}' . format(Counter.no_of_counters))
 
     @property
     def count(self):
@@ -36,4 +36,8 @@ Counter.print_no_of_counters()
 
 a = first_counter + second_counter + third_counter + fourth_counter
 
+print("first_counter + second_counter + third_counter + fourth_counter:")
+
+a.inc_counter()
+print("Increment 'a' counter:")
 print(a.count)
